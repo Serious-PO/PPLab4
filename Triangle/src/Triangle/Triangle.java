@@ -18,6 +18,11 @@ public class Triangle {
 			this.side3=side3;
 		}
 	}
+	public Triangle(){
+		side1=0;
+		side2=0;
+		side3=0;
+	}
 	public void getPerimeter(){
 		double perimeter;
 		if(side1==0 || side2==0 || side3==0)
