@@ -26,20 +26,18 @@ public class Rectangle implements Geometry {
 		if(side1==0 || side2==0)
 			System.out.println("Прямоугольник задан неправильно!");
 		else{
-			perimeter=side1+side2+side3;
-			System.out.println("Периметр треугольника =" + perimeter);
+			perimeter=2*(side1+side2);
+			System.out.println("Периметр прямоугольника =" + perimeter);
 		}
 			
 	}
 	public void getArea(){
 		double area;
-		double p;
-		if(side1==0 || side2==0 || side3==0)
+		if(side1==0 || side2==0)
 			System.out.println("Невозможно вычислить площадь треугольника!");
 		else{
-			p=(side1+side2+side3)/2;
-			area=Math.sqrt(p*(p-side1)*(p-side2)*(p-side3));
-			System.out.println("Площадь треугольника равна =" + area);
+			area = side1*side2;
+			System.out.println("Площадь прямоугольника равна =" + area);
 		}
 	}
 }
