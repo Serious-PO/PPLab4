@@ -1,4 +1,4 @@
-package Triangle;
+package MainPackage;
 
 public class Rectangle implements Geometry {
 
